@@ -6,6 +6,8 @@ AI agents such as Claude Code and Codex now read data, write and run code, submi
 
 ## View the slides
 
+Online: https://hongqin.github.io/who_check_the_agent/
+
 The deck is built with [Slidev](https://sli.dev).
 
 ```bash
