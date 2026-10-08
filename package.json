@@ -1,0 +1,19 @@
+{
+  "name": "who-checks-the-agent",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node run-slidev.cjs --remote=false",
+    "build": "node run-slidev.cjs build",
+    "export": "node run-slidev.cjs export --with-clicks"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.1.0",
+    "@slidev/theme-default": "latest",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "node-localstorage": "^3.0.5",
+    "playwright-chromium": "^1.54.2"
+  }
+}

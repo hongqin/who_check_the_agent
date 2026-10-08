@@ -1,0 +1,98 @@
+/* Sized for Zoom screen share: large type, few words per slide. */
+:root {
+  --ink: #1d2430;
+  --muted: #5b6472;
+  --rule: #cfd5de;
+  --accent: #2f6db0;
+  --warn: #c2571a;
+  --wash: #f3f5f8;
+}
+
+.slidev-layout {
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+.slidev-layout h1 { font-size: 2.1em; font-weight: 700; line-height: 1.15; }
+.slidev-layout h2 { font-size: 1.6em; font-weight: 700; margin-bottom: .5em; }
+.slidev-layout strong { color: var(--ink); }
+.slidev-layout li { margin: .25em 0; }
+.slidev-layout table { font-size: .9em; }
+.slidev-layout th { color: var(--muted); font-weight: 600; }
+
+/* "Part 2 · Hidden actions" label above a slide title */
+.part {
+  font: 600 .7em/1 ui-monospace, Menlo, Consolas, monospace;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+  margin-bottom: .4em;
+}
+
+/* source line, placed right after the slide content */
+.src {
+  margin-top: .9em;
+  font-size: .58em; color: var(--muted); line-height: 1.3;
+}
+.src a { color: var(--muted); }
+
+/* student activity cue: what to do in Zoom */
+.zoom {
+  display: inline-block; margin-top: .6em; padding: .35em .8em; border-radius: 6px;
+  background: #e6eef8; color: var(--accent); font-weight: 600;
+}
+
+/* unverified claim: must be checked (or cut) before the talk */
+.verify {
+  display: inline-block; padding: 0 .4em; border-radius: 4px; font-size: .7em; font-weight: 700;
+  background: var(--warn); color: #fff; vertical-align: middle;
+}
+
+/* big pull quote / lesson line */
+.lesson {
+  margin-top: .8em; padding-left: .8em; border-left: 4px solid var(--warn);
+  font-size: 1.1em; font-style: italic;
+}
+
+/* slide 6 reference list */
+.refs > div {
+  display: grid; grid-template-columns: 1.8em 1fr; gap: .6em;
+  padding: .55em 0; border-top: 2px solid var(--rule); font-size: .95em;
+}
+.refs > div:last-child { border-bottom: 2px solid var(--rule); }
+.refs b.tag { color: var(--accent); font-size: 1.25em; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+.muted { color: var(--muted); }
+.big { font-size: 1.6em; font-weight: 700; }
+
+/* dense slides (tables, two columns): step the type back down */
+.slidev-layout.compact { font-size: 1.1rem; }
+
+/* News headline on the Mata v. Avianca slide. */
+.mata-headline {
+  margin: .65em 0 .7em;
+  padding: .65em 0;
+  border-top: 2px solid var(--rule);
+  border-bottom: 2px solid var(--rule);
+}
+.mata-byline {
+  font-size: .6em;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--accent);
+  margin-bottom: .4em;
+}
+.mata-headline a {
+  display: block;
+  font-size: 1.22em;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Keep a reaction icon and its word on one line. */
+.nowrap { white-space: nowrap; }
+
+/* Tighter table rows on dense slides so the last row stays on screen. */
+.slidev-layout.compact td, .slidev-layout.compact th { padding-top: .35em; padding-bottom: .35em; }
